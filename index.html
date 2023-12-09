@@ -20,22 +20,23 @@
   </head>
   <body>
     <h1 class="heading">
-      <img class="logo" img src="assets/images/logo.png" alt="logo" />Love Maths
+      <img class="logo" src="assets/images/logo.png" alt="logo" /> Love Maths
     </h1>
 
     <div class="game-area">
       <div class="controls-area">
-        <buttons data-type="addition" class="btn btn--big btn--green"></buttons>
-        <i class="fas fa-plus"></i>
-        <buttons data-type="subtract" class="btn btn--big btn--blue"></buttons>
-        <i class="fas fa-minus"></i>
-        <buttons
-          data-type="multiply"
-          class="btn btn--big btn--orange"
-        ></buttons>
-        <i class="fas fa-times"></i>
-        <buttons data-type="division" class="btn btn--big btn--red"></buttons>
-        <i class="fas fa-divide"></i>
+        <button data-type="addition" class="btn btn--big btn--green">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button data-type="subtract" class="btn btn--big btn--blue">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button data-type="multiply" class="btn btn--big btn--orange">
+          <i class="fas fa-times"></i>
+        </button>
+        <button data-type="division" class="btn btn--big btn--red">
+          <i class="fas fa-divide"></i>
+        </button>
       </div>
       <div class="question-area">
         <span id="operand1">0</span>
@@ -49,9 +50,10 @@
     </div>
 
     <div class="score-area">
-      <p class="scores">Correct Answers<span id="score"></span>0</p>
-      <p class="scores">Incorrect Answers<span id="incorrect"></span>0</p>
+      <p class="scores">Correct Answers <span id="score">0</span></p>
+      <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
