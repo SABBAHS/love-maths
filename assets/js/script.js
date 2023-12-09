@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /**The main game "loop", called when the script is first loaded */
 /**and after the users answer is processed */
+
+document.getElementById("answer-box").value = "";
+
 function runGame(gameType) {
 
     // Creates two random numbers between 1 and 25
