@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    document.getElementById("answer-box").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            checkAnswer();
+        }
+    });
+
     runGame("addition");
 
 });
@@ -20,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /**and after the users answer is processed */
 
 document.getElementById("answer-box").value = "";
+document.getElementById("answer-box").focus();
 
 function runGame(gameType) {
 
@@ -113,11 +120,12 @@ function runGame(gameType) {
             document.getElementById('operator').textContent = "-";
 
         }
-        function displayMultiplyQuestion(operand1, operand2) {
 
-        }
-        function displayDivisionQuestion(operand1, operand2) {
+        function displayMultiplyQuestion(operand1, operand2) {
             document.getElementById('operand1').textContent = operand1;
             document.getElementById('operand2').textContent = operand2;
             document.getElementById('operator').textContent = "x";
+        }
+        function displayDivisionQuestion(operand1, operand2) {
+
         }
